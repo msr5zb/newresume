@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<script>
+$(document).ready(function(){
+    
+         $("#sliderButton2").css("border", "2px white solid");
+         $("#sliderButton2").css("background-color", "skyblue");
+         $("#sliderButton1").css("border", "2px #2e6da4 solid");
+         $("#sliderButton1").css("background-color", "#2e6da4");  
+    
+    $("#sliderButton1").click(function(){
+         $("#sliderButton2").css("border", "2px white solid");
+         $("#sliderButton2").css("background-color", "skyblue");
+         $("#sliderButton1").css("border", "2px #2e6da4 solid");
+         $("#sliderButton1").css("background-color", "#2e6da4");
+        
+         document.getElementById("sliderContent").style.opacity = "0.0";
+         setTimeout(function(){$("#sliderContent").html("");}, 600);
+         setTimeout(function(){$("#sliderContent").html("<!-- Slide Container --> <div id='jssor_1' style='position: relative; margin: 0 auto; top: 0px; left: 0px; width: 960px; height: 420px; overflow: hidden; visibility: hidden;'> <!-- Loading Screen --> <div data-u='loading' style='position: absolute; top: 0px; left: 0px;'> <div style='filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;'></div> <div style='position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;'></div> </div> <!-- ************* Start Slides ************* --> <div data-u='slides' style='cursor: default; position: relative; top: 0px; left: 0px; width: 960px; height: 420px; overflow: hidden;'> <!--Slide 1 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/java.jpg' /> <div style='position: absolute; top: 50px; left: 450px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Knowledge in object creation and manipulation, theading, structures, hash maps, and much more. Has worked with JavaFX as well. </div> </div> <!--Slide 2 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/javascript.jpg' /> <div style='position: absolute; top: 250px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Object and file manipulation, effects and transitions. </div> </div> <!--Slide 3 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/c.jpg' /> <div style='position: absolute; top: 80px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Thoroughly worked with sorting and searching algorithms including binary trees and merge sorts. Knows how to allocate memory where needed and create header/make files. </div> </div> <!--Slide 4 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/cplusplus.jpg' /> <div style='position: absolute; top: 80px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Experience with file input and output. Knowledge of function/structure creation. </div> </div> <!--Slide 5 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/php.jpg' /> <div style='position: absolute; top: 260px; left: 120px; width: 740px; height: 120px; font-size: 28px; color: #ffffff; line-height: 36px;'> Experienced with creating log-in systems using PHP and sessions. Have made small site commenting systems. Knows how to manipulate data and can do basic algorithms retrieving data from databases. </div> </div> <!--Slide 6 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/postgres.jpg' /> <div style='position: absolute; top: 180px; left: 450px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Ability to create databases. Knowledge of schema and table construction and how to write queries, as well as indexing. </div> </div> <!--Slide 7 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/html5.jpg' /> <div style='position: absolute; top: 160px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Experience with site design and creation. Knows how to link libraries and use classes/id’s correctly. </div> </div> <!--Slide 8 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/css3.jpg' /> <div style='position: absolute; top: 160px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Much knowledge in site design, styling, animations, and transitions. </div> </div> <!--Slide 9 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/ajax.jpg' /> <div style='position: absolute; top: 60px; left: 120px; width: 740px; height: 120px; font-size: 28px; color: #ffffff; line-height: 36px;'> Knowledge in how to use ajax calls to retrieve data from particular file formats (http, xml, json) and use that data to populate objects. </div> </div> <!--Slide 10 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/jquery.jpg' /> <div style='position: absolute; top: 180px; left: 450px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Can Create on-load functions and extract/manipulate DOM objects. </div> </div> <!--Slide 11 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/microController.jpg' /> <div style='position: absolute; top: 50px; left: 450px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Worked with Assembly Language for the Motorola MC68HC11 microcontroller. Experience with register/stack manipulation as well as I/O. </div> </div> </div> <!-- ************* End Slides ************* --> <!-- Bullet Navigator --> <div data-u='navigator' class='jssorb05' style='bottom:16px;right:16px;' data-autocenter='1'> <!-- bullet navigator item prototype --> <div data-u='prototype' style='width:16px;height:16px;'></div> </div> <!-- Arrow Navigator --> <span data-u='arrowleft' class='jssora22l' style='top:0px;left:12px;width:40px;height:58px;' data-autocenter='2'></span> <span data-u='arrowright' class='jssora22r' style='top:0px;right:32px;width:40px;height:58px;' data-autocenter='2'></span> </div>");}, 600);
+        setTimeout(function(){reloadSlider();}, 600);
+        setTimeout(function(){document.getElementById("sliderContent").style.opacity = "1.0";}, 600);
+       
+    });     
+    
+    $("#sliderButton2").click(function(){
+         $("#sliderButton1").css("border", "2px white solid");
+         $("#sliderButton1").css("background-color", "skyblue");
+         $("#sliderButton2").css("border", "2px #2e6da4 solid");
+         $("#sliderButton2").css("background-color", "#2e6da4");
+
+         document.getElementById("sliderContent").style.opacity = "0.0";
+         setTimeout(function(){$("#sliderContent").html("");}, 600);
+         setTimeout(function(){$("#sliderContent").html("<!-- Slide Container --> <div id='jssor_1' style='position: relative; margin: 0 auto; top: 0px; left: 0px; width: 960px; height: 420px; overflow: hidden; visibility: hidden;'> <!-- Loading Screen --> <div data-u='loading' style='position: absolute; top: 0px; left: 0px;'> <div style='filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;'></div> <div style='position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;'></div> </div> <!-- ************* Start Slides ************* --> <div data-u='slides' style='cursor: default; position: relative; top: 0px; left: 0px; width: 960px; height: 420px; overflow: hidden;'> <!--Slide 1 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/laravel.jpg' /> <div style='position: absolute; top: 80px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;'> Have worked with a Laravel PHP framework. Knows how to route, create models, and views as part of the Model View Controller format. </div> </div> <!--Slide 2 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/virtualBox.jpg' /> <div style='position: absolute; top: 290px; left: 315px; width: 625px; height: 120px; font-size: 26px; color: #ffffff; line-height: 30px;'> Experienced with creating and managing virtual machines. Created and worked within windows 7+ and server virtual machines. </div> </div> <!--Slide 3 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/vmware.jpg' /> <div style='position: absolute; top: 280px; left: 300px; width: 620px; height: 120px; font-size: 28px; color: #ffffff; line-height: 36px;'> Created and managed virtual machines using VMware. Much experience with the Linux Mint OS within VMware. </div> </div> <!--Slide 4 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/office.jpg' /> <div style='position: absolute; top: 340px; left: 100px; width: 760px; height: 120px; font-size: 28px; color: #000000; line-height: 26px;'> Have worked with about every major Office Application. Word, Excel, PowerPoint are my strong suits. </div> </div> <!--Slide 5 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/vegasPro.jpg' /> <div style='position: absolute; top: 220px; left: 130px; width: 700px; height: 120px; font-size: 32px; color: #ffffff; line-height: 36px;'> Much experience with video manipulation, creation, and effects using Sony Vegas Pro. </div> </div> <!--Slide 6 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/ps.jpg' /> <div style='position: absolute; top: 120px; left: 440px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 36px;'> Experienced with image creation and manipulation within Photoshop. Knows difference/understands different file types and how to convert between them. </div> </div> <!--Slide 7 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/netbeans.jpg' /> <div style='position: absolute; top: 240px; left: 130px; width: 780px; height: 120px; font-size: 32px; color: #000000; line-height: 36px;'> Created many applications/projects using the NetBeans interface. Can manage/navigate through multiple projects, as well as link resources where needed. </div> </div> <!--Slide 8 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/github.jpg' /> <div style='position: absolute; top: 240px; left: 260px; width: 620px; height: 120px; font-size: 32px; color: #000000; line-height: 36px;'> Have worked in GitHub for many group projects, as well as personal projects. Knowledge in branch creation and version control. </div> </div> <!--Slide 9 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/sourcetree.jpg' /> <div style='position: absolute; top: 90px; left: 60px; width: 420px; height: 120px; font-size: 32px; color: #ffffff; line-height: 36px;'> Used Source Tree in larger scaled projects to keep GitHub projects clean and efficient. </div> </div> <!--Slide 10 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/azure.jpg' /> <div style='position: absolute; top: 220px; left: 130px; width: 720px; height: 120px; font-size: 28px; color: #000000; line-height: 36px;'> Have worked with this Platform as a Service many times. Often hosts site being deployed from a GitHub Repository. Also used Azure to create and manage Virtual Machines. </div> </div> <!--Slide 11 --> <div data-p='225.00' style='display: none;'> <img data-u='image' src='images/sliderPics/openshift.jpg' /> <div style='position: absolute; top: 90px; left: 60px; width: 420px; height: 120px; font-size: 28px; color: #ffffff; line-height: 36px;'> Has used OpenShift for many projects. Hosted many PHP applications, linked with PostGreSQL servers on OpenShift. Knows how to SSH into hosted projects and manage Databases within them. </div> </div> </div> <!-- ************* End Slides ************* --> <!-- Bullet Navigator --> <div data-u='navigator' class='jssorb05' style='bottom:16px;right:16px;' data-autocenter='1'> <!-- bullet navigator item prototype --> <div data-u='prototype' style='width:16px;height:16px;'></div> </div> <!-- Arrow Navigator --> <span data-u='arrowleft' class='jssora22l' style='top:0px;left:12px;width:40px;height:58px;' data-autocenter='2'></span> <span data-u='arrowright' class='jssora22r' style='top:0px;right:32px;width:40px;height:58px;' data-autocenter='2'></span> </div>");}, 600);
+        setTimeout(function(){reloadSlider();}, 600);
+        setTimeout(function(){document.getElementById("sliderContent").style.opacity = "1.0";}, 600);
+    });
+    
+    
+
+    
+    function reloadSlider() {
+        
+           var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+            $("#content").css("overflow-y", "hidden");
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+    }
+    
+});
+    
+</script>    
+    
+    
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:Arial, sans-serif">
+
+    <link rel="stylesheet" type="text/css" href="css/sliderJS.css" />
+    <!-- use jssor.slider.debug.js instead for debug -->
+
+    <button type="button" id="sliderButton1" class="btn btn-primary sliderButton">Programming Languages</button>
+    <button type="button" id="sliderButton2" class="btn btn-primary sliderButton">Applications</button>
+    <div  id="sliderContent">
+    <!-- Slide Container -->
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 960px; height: 420px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <!-- ************* Start Slides ************* -->
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 960px; height: 420px; overflow: hidden;">
+        
+            <!--Slide 1 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/java.jpg" />
+                <div style="position: absolute; top: 50px; left: 450px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+                    Knowledge in object creation and manipulation, theading, structures, hash maps, and much more. Has worked with JavaFX as well. 
+                </div>
+            </div>
+            
+            <!--Slide 2 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/javascript.jpg" />
+                <div style="position: absolute; top: 250px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+                    Object and file manipulation, effects and transitions. 
+                </div>
+            </div>
+
+            <!--Slide 3 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/c.jpg" />
+                <div style="position: absolute; top: 80px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+                   Thoroughly worked with sorting and searching algorithms including binary trees and merge sorts. Knows how to allocate memory where needed and create header/make files. 
+                </div>
+            </div>
+            <!--Slide 4 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/cplusplus.jpg" />
+                <div style="position: absolute; top: 80px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+                   Experience with file input and output. Knowledge of function/structure creation. 
+                </div>
+            </div>
+
+            <!--Slide 5 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/php.jpg" />
+                <div style="position: absolute; top: 260px; left: 120px; width: 740px; height: 120px; font-size: 28px; color: #ffffff; line-height: 36px;">
+                   Experienced with creating log-in systems using PHP and sessions. Have made small site commenting systems. Knows how to manipulate data and can do basic algorithms retrieving data from databases. 
+                </div>
+            </div>
+            <!--Slide 6 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/postgres.jpg" />
+                <div style="position: absolute; top: 180px; left: 450px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+                   Ability to create databases. Knowledge of schema and table construction and how to write queries, as well as indexing.
+                </div>
+            </div>
+
+            <!--Slide 7 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/html5.jpg" />
+             <div style="position: absolute; top: 160px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+                   Experience with site design and creation. Knows how to link libraries and use classes/id’s correctly. 
+                </div>
+            </div>
+            <!--Slide 8 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/css3.jpg" />
+                <div style="position: absolute; top: 160px; left: 50px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+                   Much knowledge in site design, styling, animations, and transitions. 
+                </div>
+            </div>
+
+            <!--Slide 9 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/ajax.jpg" />
+                <div style="position: absolute; top: 60px; left: 120px; width: 740px; height: 120px; font-size: 28px; color: #ffffff; line-height: 36px;">
+                   Knowledge in how to use ajax calls to retrieve data from particular file formats (http, xml, json) and use that data to populate objects. 
+                </div>
+            </div>
+
+            <!--Slide 10 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/jquery.jpg" />
+                <div style="position: absolute; top: 180px; left: 450px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+Can Create on-load functions and extract/manipulate DOM objects.
+                </div>
+            </div>
+            
+            <!--Slide 11 -->
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/sliderPics/microController.jpg" />
+                <div style="position: absolute; top: 50px; left: 450px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">
+Worked with Assembly Language for the Motorola MC68HC11 microcontroller. Experience with register/stack manipulation as well as I/O. 
+                </div>
+            </div>      
+    
+        </div>
+        <!-- ************* End Slides ************* -->    
+
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:32px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    </div>
+
+</body>
+</html>

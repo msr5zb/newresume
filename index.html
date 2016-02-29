@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Michael Rallo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<script>
+$(document).ready(function(){
+    
+    
+ function preloader() {
+        if (document.images) {
+            var img1 = new Image();
+            var img2 = new Image();
+            var img3 = new Image();
+            var img4 = new Image();
+            var img5 = new Image();
+            var img6 = new Image();
+            var img7 = new Image();
+            var img8 = new Image();
+            var img9 = new Image();
+            var img10 = new Image();
+            var img11 = new Image();
+            var img12 = new Image();
+            var img13 = new Image();
+            var img14 = new Image();
+            var img15 = new Image();
+            var img16 = new Image();
+            var img17 = new Image();
+            var sliderb1 = new Image();
+            var sliderb2 = new Image();
+            var sliderb3 = new Image();
+            var sliderb4 = new Image();
+            var sliderb5 = new Image();
+            var sliderb6 = new Image();
+            var sliderb7 = new Image();
+            var sliderb8 = new Image();
+            var sliderb9 = new Image();
+            var sliderb10 = new Image();
+            var sliderb11 = new Image();
+           
+            
+         
+
+            img1.src = "images/stchas.jpg";
+            img2.src = "images/mizzou.jpg";
+            img3.src = "images/fzn.jpg";
+            img4.src = "images/sliderPics/postgres.jpg";
+            img5.src = "images/sliderPics/jquery.jpg";
+            img6.src = "images/sliderPics/javascript.jpg";
+            img7.src = "images/sliderPics/java.jpg";
+            img8.src = "images/sliderPics/html5.jpg";
+            img9.src = "images/sliderPics/css3.jpg";
+            img10.src = "images/sliderPics/cplusplus.jpg";
+            img11.src = "images/sliderPics/c.jpg";
+            img12.src = "images/sliderPics/ajax.jpg";
+            img13.src = "images/sliderPics/php.jpg";
+            img14.src = "images/loading.gif";
+            img15.src = "images/a22.png";
+            img16.src = "images/b05.png";
+            img17.src = "images/sliderPics/microcontroller.jpg";
+            
+            
+            
+            
+            var gameimg = new Image();
+            var dnimg = new Image();
+            var myzouimg = new Image();
+            var reelzimg = new Image();
+
+            gameimg.src = "images/projects/game1.jpg";
+            dnimg.src = "images/projects/dn1.jpg";
+            myzouimg.src = "images/projects/myzou1.jpg";
+            reelzimg.src = "images/projects/reelz1.jpg";            
+            
+            var hyvee = new Image();
+            var shopnsave = new Image();
+            var cellairis = new Image();
+            var ozellas = new Image();
+   
+            hyvee.src = "images/hyveeBG2.jpg";
+            shopnsave.src = "images/shopnsaveBG2.jpg";
+            cellairis.src = "images/cellairisBG2.jpg";
+            ozellas.src = "images/ozellasBG2.jpg"; 
+            
+            sliderb1.src = "images/sliderPics/laravel.jpg";
+            sliderb2.src = "images/sliderPics/virtualBox.jpg";
+            sliderb3.src = "images/sliderPics/vmware.jpg";
+            sliderb4.src = "images/sliderPics/office.jpg";
+            sliderb5.src = "images/sliderPics/vegasPro.jpg";
+            sliderb6.src = "images/sliderPics/ps.jpg";
+            sliderb7.src = "images/sliderPics/netbeans.jpg";
+            sliderb8.src = "images/sliderPics/github.jpg";
+            sliderb9.src = "images/sliderPics/sourcetree.jpg";
+            sliderb10.src = "images/sliderPics/openshift.jpg";
+            sliderb11.src = "images/sliderPics/azure.jpg";
+        }
+    }
+    
+    function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                if (oldonload) {
+                    oldonload();
+                }
+                func();
+            }
+        }
+    }
+    
+    addLoadEvent(preloader);     
+    
+    function smoothScroll() {
+       $('html, body').animate({
+           scrollTop: $("#content").offset().top
+        }, 1000);
+    }
+    
+    var contentSelection;
+   
+            $('#content').html("<h1>About Me!</h1> <div id='aboutMeContent'> <h5><strong>Name:</strong> Michael Rallo</h5> <h5><strong>Address:</strong> 5024 Clark Ln. Apt. No. 101 Columbia, Missouri 65202</h5> <h5><strong>Phone Number:</strong> (314)-322-0042</h5> <h5><strong>Email:</strong> rallomikework@gmail.com</h5> <h5><strong>Career Objective:</strong> I am approaching my final year studying Bachelor of Computer Science at the University of MissouriColumbia. I am seeking a position in the Software Engineering/Web Development field where I can utilize my knowledge of programming languages, layout, design, and documentation to help meet and exceed the company’s goals.  I aim to excel with hard work and dedication, as reflected in my academic achievements, making me an ideal candidate for this position.</h5> <h5> Hello! My name is Michael Rallo. Born and raised in O'Fallon, Missouri, I am a Computer Science student enrolled at the University of Missouri-Columbia. I enjoy programming, designing, and experimenting with new things. Flexible, friendly, and look foward to developing with a fun, hard-working team. </h5> <h5>Currently I am looking for an internship in the Redmond/Lynnwood/Seattle (WA) Area; for after graduation (May 2017) I plan to relocate there. </h5> <h5>Find my Look SharpAccount <a href='https://profiles.looksharp.com/1558396-michael-rallo?utm_source=clipboard&utm_medium=profile_share&u' target='_blank'>Here</a> and my LinkedIn Account <a href='https://www.linkedin.com/in/michael-rallo-29980a114?trk=hp-identity-name' target='_blank'>Here</a></h5> <h5>Quick Resumee Print-Out:</h5> <h ><button type='button'  id='printPDFButton' class='btn btn-primary'>View/Print Resume !</button></h5> </div> ");
+        
+    
+    $(".circle").click(function(){
+        console.log("boom");
+        contentSelection = this.id;
+        if(contentSelection == 'aboutMe'){
+            $('#content').html("<h1>About Me!</h1> <div id='aboutMeContent'> <h5><strong>Name:</strong> Michael Rallo</h5> <h5><strong>Address:</strong> 5024 Clark Ln. Apt. No. 101 Columbia, Missouri 65202</h5> <h5><strong>Phone Number:</strong> (314)-322-0042</h5> <h5><strong>Email:</strong> rallomikework@gmail.com</h5> <h5><strong>Career Objective:</strong> I am approaching my final year studying Bachelor of Computer Science at the University of MissouriColumbia. I am seeking a position in the Software Engineering/Web Development field where I can utilize my knowledge of programming languages, layout, design, and documentation to help meet and exceed the company’s goals.  I aim to excel with hard work and dedication, as reflected in my academic achievements, making me an ideal candidate for this position.</h5> <h5> Hello! My name is Michael Rallo. Born and raised in O'Fallon, Missouri, I am a Computer Science student enrolled at the University of Missouri-Columbia. I enjoy programming, designing, and experimenting with new things. Flexible, friendly, and look foward to developing with a fun, hard-working team. </h5> <h5>Currently I am looking for an internship in the Redmond/Lynnwood/Seattle (WA) Area; for after graduation (May 2017) I plan to relocate there. </h5> <h5>Find my Look SharpAccount <a href='https://profiles.looksharp.com/1558396-michael-rallo?utm_source=clipboard&utm_medium=profile_share&u' target='_blank'>Here</a> and my LinkedIn Account <a href='https://www.linkedin.com/in/michael-rallo-29980a114?trk=hp-identity-name' target='_blank'>Here</a></h5> <h5>Quick Resumee Print-Out:</h5> <h ><button type='button'  id='printPDFButton' class='btn btn-primary'>View/Print Resume !</button></h5> &lt;!-- Looks foward to accomplishing big things that can change the world.  --&gt; </div> ");
+        }
+        
+        if(contentSelection == 'education'){
+         console.log("So Smart");   
+         $('#content').html("<h2>Education!</h2> <h5>Majors: Computer Science, Computer Engineering </h5> <h5>Minor: Mathematics</h5> <hr><hr> <h3><a href='http://missouri.edu/' target='_blank' class='schoolLink'>University of Missouri-Columbia</a></h3> <h6>Columbia, MO 65211</h6> <div id='mizzou'></div> <h3>Currently Enrolled:Senior</h3> <h5>GPA: 3.74/4.00 | <a href='http://registrar.missouri.edu/grades-calculators/grading-system.php'></a></h5> <hr><hr> <h3><a href='https://www.stchas.edu/' target='_blank' class='schoolLink'>St. Charles Community College</a></h3> <h6>4601 Mid Rivers Mall Dr, Cottleville, MO 63376</h6> <div id='stchas'></div> <h3>Obtained Degree: Associate of Arts (May 2013)</h3> <h5>GPA: 4.00/4.00</h5> <hr><hr> <h3><a href='http://nhs.fz.k12.mo.us/pages/FZ_NHS' target='_blank' class='schoolLink'>Fort Zumwalt North High</a></h3> <h6>1230 Tom Ginnever Ave, O'Fallon, MO 63366</h6> <div id='fzn'></div> <h3>Graduated May 2012</h3> <h5>Graduated Top 1% of Class</h5> <h5>Graduated with Highest Honors (summa cum laude)</h5> <hr><hr> ");
+            $('#content').css("height", "auto");
+            
+        }
+   
+        
+       
+    });   
+});
+</script>
+</head>
+<body>
+
+<div class="container" id="contentContainer">
+  <div class="row" id="bannerRow">
+    <div class="col-md-12" id="banner"></div>
+  </div>
+  
+   <div class="row" id="navigation">
+        <div class="col-md-2">
+            <div class="circle glyphicon glyphicon-user" id="aboutMe"></div>
+            <div class="circle glyphicon glyphicon-education" id="education"></div>
+            <div class="circle glyphicon glyphicon-leaf" id="experience"></div>
+            <div class="circle glyphicon glyphicon-folder-open" id="projects"></div>
+            <div class="circle glyphicon glyphicon-briefcase" id="pastWork"></div>
+        </div>
+        <div class="col-md-10" id="content"></div>
+       
+       
+    </div>   
+</div>
+
+</body>
+</html>

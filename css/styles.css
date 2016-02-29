@@ -1,0 +1,533 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color:black;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+
+#navigation{
+    margin: auto;
+    padding: 2%;
+    text-align: center; 
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+}
+
+
+#contentContainer{
+    margin: auto;
+    
+    padding: 0px;
+    background-color: rgba(22,22,22,0.4);
+    border-radius: 2%;
+    border: solid 16px rgba(22,22,22,0.6);
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.slightRight{
+    margin-right: 18px;
+}
+.italics{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+#hyvee{
+    background-image: url("../images/hyveeBG.jpg");
+}
+#shopnsave{
+    background-image: url("../images/shopnsaveBG.jpg");
+}
+#cellairis{
+    background-image: url("../images/cellairisBG.jpg");
+}
+#ozellas{
+    background-image: url("../images/ozellasBG.jpg");
+}
+#hyveeBG{
+    background-image: url("../images/hyveeBG2.jpg");
+}
+#shopnsaveBG{
+    background-image: url("../images/shopnsaveBG2.jpg");
+}
+#cellairisBG{
+    background-image: url("../images/cellairisBG2.jpg");
+}
+#ozellasBG{
+    background-image: url("../images/ozellasBG2.jpg");
+}
+
+.workBall{
+    background-color: black;
+    background-size: 100% 100%;
+    border: 6px white solid;
+    height:160px;
+    width: 190px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.7;
+}
+.workBall:hover{
+    opacity: 1.0 !important;   
+    box-shadow: 0px 0px 20px #FFFFFF !important;
+    -webkit-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -kthtml-transition: all .6s ease;
+    transition: all .6s ease;  
+}
+
+.gameOverview{
+    background-size:100% 100%;
+    height:400px; 
+    padding:0px;
+    text-align:center;
+}
+#workContent{
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;   
+}
+#projectContent{
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;   
+}
+#projectContent a{
+    cursor: pointer;
+}
+
+#gameBackground{
+  background-image: url('../images/projects/game1.jpg');  
+}
+#dnBackground{
+  background-image: url('../images/projects/dn1.jpg');  
+}
+#myzouBackground{
+  background-image: url('../images/projects/myzou1.jpg');  
+}
+#reelzBackground{
+  background-image: url('../images/projects/reelz1.jpg');  
+}
+
+#projectContentAlign{
+    text-align: left;
+}
+#content #projectContentAlign ul li{
+    text-decoration: underline;
+    list-style: circle;
+    color: white;
+}
+
+.projectPreview{
+    height: 146px;
+    width: 216px;
+    background-color: black;
+    border: solid white 3px;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    background-size: cover;
+    opacity: 0.7;
+    -webkit-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -kthtml-transition: all .6s ease;
+    transition: all .6s ease;  
+}
+.projectPreview:hover{
+    opacity: 1.0 !important;   
+    box-shadow: 0px 0px 20px #FFFFFF !important;
+    -webkit-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -kthtml-transition: all .6s ease;
+    transition: all .6s ease;  
+}
+.projectPreviewContainer{
+    display: inline-flex;   
+    margin: 0px; 
+    padding: 0px;
+}.workBallContainer{
+    display: inline-flex;   
+    margin: 0px; 
+    padding: 0px;
+}
+
+/* Small Res Tablet */
+@media (max-width: 600px) {
+  .projectPreviewContainer{
+     display: block;   
+  }
+}@media (max-width: 300px) {
+  .workBallContainer{
+     display: block;   
+  }
+}
+@media (max-width: 1000px) {
+    .workBall{
+        height:100px;
+        width: 120px;
+        margin-top: 12px;
+        margin-right: 12px;
+        background-color: black;
+    }
+}
+@media (max-width: 1250px) {
+    .workBall{
+        height:140px;
+        width: 155px;
+        background-color: black;
+    }
+}
+@media (max-width: 402px) {
+    .workBall{
+        height:70px;
+        width: 80px;
+        background-color: black;
+    }
+}
+@media (max-width: 445px) {
+    .workBall{
+        height:95px;
+        width: 110px;
+        background-color: black;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+}
+
+/* Iphone Sideways */
+@media (max-width: 525px) {
+  .projectPreview {
+    height: 76px;
+    width: 162px;
+  }
+  .gameOverview{
+        height: 340px;
+    }
+    .workBall{
+        height:100px;
+        width: 110px;  
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Iphone Vertical */
+@media (max-width: 445px) {
+  .projectPreview {
+    height: 66px;
+    width: 112px;
+  }
+    .gameOverview{
+        height: 240px;
+    }
+    
+}
+
+/* Large Desktop Monitor */
+@media (min-width: 1420px) {
+  .projectPreview {
+    height: 166px;
+    width: 266px;
+  }
+}
+
+
+#game{
+   background-image: url("../images/projects/gameSmall.jpg");
+}
+#dnfansite{
+   background-image: url("../images/projects/dnfansiteSmall.jpg");
+}
+#myzou{
+  background-image: url("../images/projects/myzouSmall.jpg");
+}
+#reelz{
+  background-image: url("../images/projects/4reelzSmall.jpg");
+}
+
+#sliderContent{
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;   
+}
+
+.sliderButton{
+    text-align: center;
+   background-color: deepskyblue;
+   border: 2px white solid;
+   height: 60px;
+   width: 240px;
+   font-size: 1.3em;
+    white-space: normal;
+    padding: 3px;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+    margin-bottom: 15px;
+    
+}
+
+.sliderButton:hover{
+   border: 2px white solid;
+   height: 60px;
+   width: 240px;
+   font-size: 1.4em;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+#printPDFButton{
+    text-align: center;
+   background-color: deepskyblue;
+   border: 2px white solid;
+   height: 40px;
+   width: 180px;
+   font-size: 1.2em;
+    white-space: normal;
+    padding: 3px;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+    
+}
+
+#printPDFButton:hover{
+   border: 2px yellow solid;
+   height: 40px;
+   width: 180px;
+   font-size: 1.25em;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#aboutMeContent{
+    
+    text-align: left;
+}
+#content div.expLogoBox{
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid #73AD21; 
+    overflow: hidden;
+}
+
+.schoolLink{
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.schoolLink:visited {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.schoolLink:active {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.schoolLink:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+
+
+
+#bannerRow{
+     padding: 0px;
+    margin: 0px;   
+}
+
+#banner{
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    height: 120px;
+    width: 100%;
+    padding: 10%;
+}
+
+#stchas{
+    background-image: url('../images/stchas.jpg');
+    background-size: 100% 100%;
+    height: 260px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 10%;
+}
+
+#mizzou{
+    background-image: url('../images/mizzou.jpg');
+    background-size: 100% 100%;
+    height: 260px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 10%;
+}
+
+#fzn{
+    background-image: url('../images/fzn.jpg');
+    background-size: 100% 100%;
+    height: 260px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 10%;
+}
+
+
+
+@media (min-width: 1430px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+@screen-lg: 1400px
+@container-large-desktop: ((1370px + @grid-gutter-width))
+    
+
+#navigation div.headerLabel{
+    background-color: deepskyblue;
+    border: 6px white solid;
+    margin: auto;
+    display: inline;
+}
+
+#navigation div.circle{
+    background-color: deepskyblue;
+    border: 6px white solid;
+    height:110px;
+    width: 110px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+#navigation div.circle:hover{
+    background-color: deepskyblue;
+    border: 6px white solid;
+    height:110px;
+    width: 110px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    transform: rotate(720deg);
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+#navigation div.glyphicon{font-size: 5em;}
+
+.small{font-size: 0.4em}
+
+#navigation ul li{
+    list-style: none; 
+}
+
+
+#content{
+    background-color:rgba(220,0,220, 0.0);
+    margin: auto;    
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
+    height:600px;
+    margin-top: 20px;
+}
+
+
+
