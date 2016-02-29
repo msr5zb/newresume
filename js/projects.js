@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head></head>
-<body>
-    <script>
-        
   $(document).ready(function(){    
         
     console.log('game');
@@ -84,59 +78,14 @@
                 break;
             }
         }
+        
+    function smoothScroll() {
+       $('html, body').animate({
+           scrollTop: $("#projectContent").offset().top
+        }, 400);
+    }
+        //$("#projectContent").css("opacity", "0.0");
+       // smoothScroll();
+        
     });  
   });  
-    
-    </script>
-    
-    <h1>Projects!</h1>
-    <div class="projectPreviewContainer">
-            <div class="projectPreview" id="game"></div>
-            <div class="projectPreview" id="dnfansite"></div>
-    </div>
-    <div class="projectPreviewContainer">
-            <div class="projectPreview" id="myzou"></div>
-            <div class="projectPreview" id="reelz"></div>
-    </div>
-    
-    
-    
-    <div id="projectContent">
-        
-        <h3>Visualizer Game (Solo Project)</h3>
-        <div class="row">
-            <div class="col-md-5" id="projectContentAlign">
-                <h4>Overview: This game was developed entirely using Java. It utilizes JavaFX to give the user a nice Interface. Is user friendly, and allows users to a variety of levels, bands, and variety of functions.</h4>
-
-                <h5 style="margin-bottom:0px;">Key Features:</h5>
-                    <ul style="margin-left:15px;">
-                        <li>Ultilizes Java's Extensive libraries on visual Effects</li>
-                        <li>Made using JavaFX</li>
-                        <li>Personal Song Selection</li>
-                        <li>HighScores</li>
-                        <li>Multiple Levels</li>
-                        <li>Can Pause Mid-Session</li>
-                        <li>Demonstrates Threading via enemies!</li>
-                        <li>Enemies Randomly Spawn</li>
-                        <li>Multiple Bands Selection</li>
-                        <li>Live/Fluid Transitions between levels</li>
-                    </ul>
-                <h5>How it Works: Simply open a music file by going to File>Open and select your song. Then, Choose a level to play on while the song is playing. Enjoy :)</h5>
-                <h5>Download Here: <a onclick="window.open('Msr5zbGameVisualizer.jar');">Game Download</a></h5>
-            </div>
-
-            <div class="col-md-7 gameOverview" id="gameBackground"></div>  
-        </div>        
-    </div>
- 
- 
-        
-        
-        
-           
-        
-    
-    
-    
-</body>
-</html>
