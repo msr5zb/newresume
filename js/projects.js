@@ -81,11 +81,9 @@
         
     function smoothScroll() {
        $('html, body').animate({
-           scrollTop: $("#projectContent").offset().top
+           scrollTop: $("#navigation").offset().top
         }, 400);
     }
-        //$("#projectContent").css("opacity", "0.0");
-       // smoothScroll();
         
     });  
   });  
