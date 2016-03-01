@@ -19,66 +19,22 @@
    
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-
-<script>
-
-</script>
-      <style>
-        
-        /* jssor slider bullet navigator skin 05 css */
-        /*
-        .jssorb05 div           (normal)
-        .jssorb05 div:hover     (normal mouseover)
-        .jssorb05 .av           (active)
-        .jssorb05 .av:hover     (active mouseover)
-        .jssorb05 .dn           (mousedown)
-        */
-        .jssorb05 {
-            position: absolute;
-        }
-        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-            position: absolute;
-            /* size of bullet elment */
-            width: 16px;
-            height: 16px;
-            background: url('img/b05.png') no-repeat;
-            overflow: hidden;
-            cursor: pointer;
-        }
-        .jssorb05 div { background-position: -7px -7px; }
-        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
-        .jssorb05 .av { background-position: -67px -7px; }
-        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
-
-        /* jssor slider arrow navigator skin 22 css */
-        /*
-        .jssora22l                  (normal)
-        .jssora22r                  (normal)
-        .jssora22l:hover            (normal mouseover)
-        .jssora22r:hover            (normal mouseover)
-        .jssora22l.jssora22ldn      (mousedown)
-        .jssora22r.jssora22rdn      (mousedown)
-        */
-        .jssora22l, .jssora22r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 40px;
-            height: 58px;
-            cursor: pointer;
-            background: url('img/a22.png') center center no-repeat;
-            overflow: hidden;
-        }
-        .jssora22l { background-position: -10px -31px; }
-        .jssora22r { background-position: -70px -31px; }
-        .jssora22l:hover { background-position: -130px -31px; }
-        .jssora22r:hover { background-position: -190px -31px; }
-        .jssora22l.jssora22ldn { background-position: -250px -31px; }
-        .jssora22r.jssora22rdn { background-position: -310px -31px; }
-    </style>
+     
 </head>
 <body>
 
+    
+     <div class="repeatingBG">
+        <div id="splashScreen">
+            
+            <div id="introText">
+                <h1>Let's Build Something<div id="changingAdjective" ></div></h1>
+                <div class="button" id="enterSite">Click to Enter Site</div>
+            </div>
+        </div>    
+    </div>
+    
+    
 <div class="container" id="contentContainer">
   <div class="row" id="bannerRow">
     <div class="col-md-12" id="banner"></div>
@@ -90,20 +46,10 @@
             <div class="circle loader glyphicon glyphicon-education" id="education"></div>
             <div class="circle loader glyphicon glyphicon-leaf" id="experience"></div>
             <div class="circle loader glyphicon glyphicon-folder-open" id="projects"></div>
-            <div class="circle loader glyphicon glyphicon-briefcase" id="pastWork"></div>
+            <div class="circle loader glyphicon glyphicon-briefcase" id="pastCourseWork"></div>
         </div>
         <div class="col-md-10" id="content"></div>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-    </div> 
+</div> 
     <nav class="navbar navbar-inverse navbar-bottom" style="padding:0px; margin: 0px;">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -114,7 +60,7 @@
       <li ><a id="educationLi" href="#" class="loader" onclick='return false;' >Education</a></li> 
       <li ><a id="experienceLi" href="#" class="loader" onclick='return false;' >Experience</a></li> 
       <li ><a id="projectsLi" href="#" class="loader" onclick='return false;' >Projects</a></li> 
-      <li ><a id="pastWorkLi" href="#" class="loader" onclick='return false;' >Past Work</a></li> 
+      <li ><a id="pastCourseWorkLi" href="#" class="loader" onclick='return false;' >Past Course Work</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href='https://profiles.looksharp.com/1558396-michael-rallo?utm_source=clipboard&utm_medium=profile_share&u' target='_blank'><span class="glyphicon glyphicon-user"></span> LookSharp</a></li>

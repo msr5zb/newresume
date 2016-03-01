@@ -27,16 +27,34 @@ body{
     transition: all 1s ease;
 }
 
+.courseName{
+    font-size: 1.8em;
+}
+.courseNumber{
+    font-size: 1.2em;
+}
+
+.courseDescription{
+    
+}
+
 
 #contentContainer{
     margin: auto;
-    
+    visibility: hidden;
+    opacity: 0;
     padding: 0px;
     background-color: rgba(22,22,22,0.4);
     border-radius: 2%;
     border: solid 16px rgba(22,22,22,0.6);
     border-top-left-radius: 0%;
     border-top-right-radius: 0%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -kthtml-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .slightRight{
@@ -97,6 +115,8 @@ body{
 #fznNewBG{
     background-image: url("../images/fznNew2.jpg");
 }
+
+
 
 
 .workBall{
@@ -307,6 +327,19 @@ body{
 }
 #reelz{
   background-image: url("../images/projects/4reelzSmall.jpg");
+}
+
+#coreCourses{
+    background-image: url("../images/coreCourses.jpg");
+}
+#operatingSystems{
+    background-image: url("../images/operatingSystems.jpg");
+}
+#computerRepair{
+    background-image: url("../images/computerRepair.jpg");
+}
+#math{
+    background-image: url("../images/math.jpg");
 }
 
 #sliderContent{
@@ -524,7 +557,8 @@ body{
 }
 
 #navigation div.circle:hover{
-    background-image: url(../images/navbg2.jpg);    border: 6px white solid;
+    background-image: url(../images/navbg2.jpg) !important;    
+    border: 6px white solid;
     height:110px;
     width: 110px;
     border-radius: 50%;
@@ -564,5 +598,124 @@ body{
     margin-top: 20px;
 }
 
+.button {
+    background-color: darkblue; /* Green */
+    border: solid white 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    z-index: 20000;
+    cursor: pointer;
+       transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+            background-image: url(../images/navbg1.jpg);
+
+    
+    }
+
+.button:hover{
+        background-image: url(../images/navbg2.jpg);
+       transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+
+}
+#changingAdjective{
+    font-style: italic;
+    -webkit-transition: all 0.5s; /* Safari */
+    -moz-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+
+.repeatingBG {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+    background: url(../images/resumebg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: black;
+}
 
 
+#introText h1{
+    font-size: 2.8em;
+}
+#introText{
+    margin-left: 60%;
+    margin-top: 20%;
+    font-family:cursive;
+    color: whitesmoke;
+}
+
+@media (max-width: 700px) {
+  #introText {
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+
+@media (max-width: 500px) {
+  #introText {
+    margin-left: 20%;
+    margin-top: 10%;
+      font-size: 0.6em;
+  }
+}
+
+
+      /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }

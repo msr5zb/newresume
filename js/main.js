@@ -1,5 +1,71 @@
 $(document).ready(function(){
     
+      $( "#enterSite" ).click(function() {
+            
+               $('.repeatingBG').css('opacity','0');
+                setTimeout(function(){ $('.repeatingBG').remove(); }, 600);
+               
+                setTimeout(function(){ $('#contentContainer').css('visibility','visible'); }, 600);
+               setTimeout(function(){ $('#contentContainer').css('opacity','1'); }, 600);
+              
+                 
+        });
+
+    
+            function entersite() {
+                console.log("Entering Site . . .");
+              $('#splash').css('visibility','hidden');
+            }
+            
+       
+            
+            
+            
+            
+            
+            
+            
+            //Returns an Unique Random Number
+            var uniqueRandoms = [];
+            var numRandoms = 10;
+            function makeUniqueRandom() {
+                if (!uniqueRandoms.length) {
+                    for (var i = 0; i < numRandoms; i++) {
+                        uniqueRandoms.push(i);
+                    }
+                }
+                var index = Math.floor(Math.random() * uniqueRandoms.length);
+                var val = uniqueRandoms[index];
+                uniqueRandoms.splice(index, 1);
+                return val;
+
+            }
+            
+            
+            //Adjective Word Array
+            var wordArray = ["Amazing.", "Brilliant.", 
+                                  "Significant.", "Memorable.", 
+                                  "Breath-Taking.", "Genius.", 
+                                  "Creative.", "Fun.", "World-Changing.", 
+                                  "Ground-Breaking."];
+            //fill Word
+            var word = wordArray[makeUniqueRandom()];
+            $("#changingAdjective").html(word);
+            
+            //Set on Interval
+            var tid = setInterval(mycode, 3200);
+            function mycode() {
+                
+                $('#changingAdjective').css('opacity','0');
+                word = wordArray[makeUniqueRandom()];
+                setTimeout(function(){ $("#changingAdjective").html(word); }, 600);
+                setTimeout(function(){ $('#changingAdjective').css('opacity','1'); }, 1000);
+                
+            }
+            function abortTimer() { // to be called when you want to stop the timer
+              clearInterval(tid);
+            }
+    
     
  function preloader() {
         if (document.images) {
@@ -118,12 +184,14 @@ $(document).ready(function(){
         $('#experienceLi').parent().removeClass("active");
         $('#projectsLi').parent().removeClass("active");
         $('#pastWorkLi').parent().removeClass("active");
+        $('#pastCourseWorkLi').parent().removeClass("active");
         
         $('#aboutMe').css("background-image", "url(images/navbg1.jpg");
         $('#education').css("background-image", "url(images/navbg1.jpg");
         $('#experience').css("background-image", "url(images/navbg1.jpg");
         $('#projects').css("background-image", "url(images/navbg1.jpg");
         $('#pastWork').css("background-image", "url(images/navbg1.jpg");
+        $('#pastCourseWork').css("background-image", "url(images/navbg1.jpg");
     }
     
    function load_projectsJS()
@@ -140,6 +208,14 @@ $(document).ready(function(){
       var script= document.createElement('script');
       script.type= 'text/javascript';
       script.src= 'js/pastWork.js';
+      head.appendChild(script);
+   }   
+   function load_pastCourseWorkJS()
+   {
+      var head= document.getElementsByTagName('head')[0];
+      var script= document.createElement('script');
+      script.type= 'text/javascript';
+      script.src= 'js/pastCourseWork.js';
       head.appendChild(script);
    }   
     
@@ -172,7 +248,7 @@ $(document).ready(function(){
     var contentSelection;
 
     
-            $('#content').html("<h1>About Me!</h1> <div id='aboutMeContent'> <h5><strong>Name:</strong> Michael Rallo</h5> <h5><strong>Address:</strong> 5024 Clark Ln. Apt. No. 101 Columbia, Missouri 65202</h5> <h5><strong>Phone Number:</strong> (314)-322-0042</h5> <h5><strong>Email:</strong> rallomikework@gmail.com</h5> <h5><strong>Career Objective:</strong> I am approaching my final year studying Bachelor of Computer Science at the University of MissouriColumbia. I am seeking a position in the Software Engineering/Web Development field where I can utilize my knowledge of programming languages, layout, design, and documentation to help meet and exceed the company’s goals to achieve something significant and memorable.</h5> <h5> Hello! My name is Michael Rallo. Born and raised in O'Fallon, Missouri, I am a Computer Science student enrolled at the University of Missouri-Columbia. I enjoy programming, designing, and experimenting with new things. Flexible, friendly, and look foward to developing with a fun, hard-working team. </h5> <h5>Currently I am looking for an internship in the Redmond/Lynnwood/Seattle (WA) Area; for after graduation (May 2017) I plan to relocate there. </h5><h5>Quick Resumee Print-Out:</h5> <h5><button type='button' onclick='window.open(\"resume.pdf\");' id='printPDFButton' class='btn btn-primary'>View/Print Resume !</button></h5> <!-- Looks foward to accomplishing big things that can change the world. --> </div> ");
+            $('#content').html("<h1>About Me!</h1> <div id='aboutMeContent'> <h3><strong>Personal Information:</strong></h3><h4><strong>Name: </strong>Michael Rallo</h4><h4><strong>Age: </strong>22</h4><h4><strong>Address:</strong> 5024 Clark Ln. Apt. No. 101 Columbia, Missouri 65202</h4> <h4><strong>Phone Number:</strong> (314)-322-0042</h4> <h4><h3><strong>Email:</strong></h3> rallomikework@gmail.com</h4> <h4><h3><strong>Career Objective:</strong></h3> I am approaching my final year studying <strong><i>Bachelor of Computer Science at the University of MissouriColumbia.</i></strong> I am seeking a position in the Software Engineering/Web Development field where I can utilize my knowledge of programming languages, layout, design, and documentation to help meet and exceed the company’s goals to achieve something significant and memorable.</h4> <h3><strong>Introduction:</strong></h3><h4> Hello! My name is Michael Rallo. Born and raised in O'Fallon, Missouri, I am a Computer Science student enrolled at the University of Missouri-Columbia. I enjoy programming, designing, and experimenting with new things. Flexible, friendly, and look foward to developing with a fun, hard-working team. </h4> <h4>Currently I am looking for an internship in the Redmond/Lynnwood/Seattle (WA) Area; for after graduation (May 2017) I plan to relocate there. </h4><h4>Quick Resumee Print-Out:</h4> <h5><button type='button' onclick='window.open(\"resume.pdf\");' id='printPDFButton' class='btn btn-primary'>View/Print Resume !</button></h5> <!-- Looks foward to accomplishing big things that can change the world. --> </div>  ");
         
     
     $(".loader").click(function(){
@@ -193,7 +269,7 @@ $(document).ready(function(){
             $('#aboutMeLi').parent().addClass('active');
             $('#aboutMe').css("background-image", "url(images/navbg2.jpg");
             setTimeout(function(){
-            $('#content').html("<h1>About Me!</h1> <div id='aboutMeContent'> <h5><strong>Name:</strong> Michael Rallo</h5> <h5><strong>Address:</strong> 5024 Clark Ln. Apt. No. 101 Columbia, Missouri 65202</h5> <h5><strong>Phone Number:</strong> (314)-322-0042</h5> <h5><strong>Email:</strong> rallomikework@gmail.com</h5> <h5><strong>Career Objective:</strong>I am approaching my final year studying Bachelor of Computer Science at the University of MissouriColumbia. I am seeking a position in the Software Engineering/Web Development field where I can utilize my knowledge of programming languages, layout, design, and documentation to help meet and exceed the company’s goals to achieve something significant and memorable.</h5> <h5> Hello! My name is Michael Rallo. Born and raised in O'Fallon, Missouri, I am a Computer Science student enrolled at the University of Missouri-Columbia. I enjoy programming, designing, and experimenting with new things. Flexible, friendly, and look foward to developing with a fun, hard-working team. </h5> <h5>Currently I am looking for an internship in the Redmond/Lynnwood/Seattle (WA) Area; for after graduation (May 2017) I plan to relocate there. </h5><h5>Quick Resumee Print-Out:</h5> <h5><button type='button' onclick='window.open(\"resume.pdf\");' id='printPDFButton' class='btn btn-primary'>View/Print Resume !</button></h5> <!-- Looks foward to accomplishing big things that can change the world. --> </div> ");
+            $('#content').html("<h1>About Me!</h1> <div id='aboutMeContent'> <h3><strong>Personal Information:</strong></h3><h4><strong>Name: </strong>Michael Rallo</h4><h4><strong>Age: </strong>22</h4><h4><strong>Address:</strong> 5024 Clark Ln. Apt. No. 101 Columbia, Missouri 65202</h4> <h4><strong>Phone Number:</strong> (314)-322-0042</h4> <h4><h3><strong>Email:</strong></h3> rallomikework@gmail.com</h4> <h4><h3><strong>Career Objective:</strong></h3> I am approaching my final year studying <strong><i>Bachelor of Computer Science at the University of MissouriColumbia.</i></strong> I am seeking a position in the Software Engineering/Web Development field where I can utilize my knowledge of programming languages, layout, design, and documentation to help meet and exceed the company’s goals to achieve something significant and memorable.</h4> <h3><strong>Introduction:</strong></h3><h4> Hello! My name is Michael Rallo. Born and raised in O'Fallon, Missouri, I am a Computer Science student enrolled at the University of Missouri-Columbia. I enjoy programming, designing, and experimenting with new things. Flexible, friendly, and look foward to developing with a fun, hard-working team. </h4> <h4>Currently I am looking for an internship in the Redmond/Lynnwood/Seattle (WA) Area; for after graduation (May 2017) I plan to relocate there. </h4><h4>Quick Resumee Print-Out:</h4> <h5><button type='button' onclick='window.open(\"resume.pdf\");' id='printPDFButton' class='btn btn-primary'>View/Print Resume !</button></h5> <!-- Looks foward to accomplishing big things that can change the world. --> </div>  ");
         
         }, 600);}
         if(contentSelection == 'education' || contentSelection == 'educationLi'){
@@ -239,6 +315,18 @@ $(document).ready(function(){
             
             
         }
+        
+        
+        if(contentSelection == 'pastCourseWork' || contentSelection == 'pastCourseWorkLi'){
+            $('#pastCourseWorkLi').parent().addClass('active');
+            $('#pastCourseWork').css("background-image", "url(images/navbg2.jpg");
+             setTimeout(function(){
+                load_pastCourseWorkJS();
+         $('#content').html("<h1>Past Course Work!</h1> <div class='projectPreviewContainer'> <div class='projectPreview' id='coreCourses'></div> <div class='projectPreview' id='operatingSystems'></div> </div> <div class='projectPreviewContainer'> <div class='projectPreview' id='computerRepair'></div> <div class='projectPreview' id='math'></div> </div> <div id='projectContent'><h3>Core Programming Courses</h3> <div class='row'> <div class='col-md-12' id='projectContentAlign'> <div class='course'> <div class='courseName'>Java - Intermediate</div> <div class='courseNumber'>Computer Science CS3330 <span class='courseMetaData'> | Spring 2015 | Dale Mussuer | Mizzou</span></div> <div class='courseDescription'>Java Application Development. Used NetBeans and JavaFX to develop user friendly interface applications.</div> </div> <hr><div class='course'> <div class='courseName'>Database</div> <div class='courseNumber'>Computer Science CS3380 <span class='courseMetaData'> | Spring 2015 | Kleric | Mizzou</span></div> <div class='courseDescription'>Discussed and Developed algorithms for efficient, effective programming.</div> </div> <hr><div class='course'> <div class='courseName'>Software Engineering</div> <div class='courseNumber'>Computer Science CS4320 <span class='courseMetaData'> | Fall 2015 | Grant Scott | Mizzou</span></div> <div class='courseDescription'>Learned the processes that go into Application Development. Gained great experience in Requirements Analysis, Documentation, and team work.</div> </div> <hr><div class='course'> <div class='courseName'>Web Development</div> <div class='courseNumber'>Computer Science CS2830 <span class='courseMetaData'> | Fall 2015 | Justin Schuelar | Mizzou</span></div> <div class='courseDescription'>Created Multiple Web Applications that utilized HTML5, CS3, Javascripting, JQuery, and Ajax. Also worked with Site hosting.</div> </div> <hr><div class='course'> <div class='courseName'>Assembly Language</div> <div class='courseNumber'>Computer Science CS3280 <span class='courseMetaData'> | Fall 2015 | Michael Yursky | Mizzou</span></div> <div class='courseDescription'>Programmed for the Motorola MC68HC11 micro-controller. Learned about processor architecture and byte manipulation.</div> </div><hr> <div class='course'> <div class='courseName'>C Programming</div> <div class='courseNumber'>Computer Science CS2050 <span class='courseMetaData'>| Fall 2014 | Joe Guilliams | Mizzou</span></div> <div class='courseDescription'>Developed Programs in the C Language. Discussed algorithms and pointer math..</div> </div> <hr><div class='course'> <div class='courseName'>C++ - Intermediate</div> <div class='courseNumber'>Computer Science CCSC 24400 <span class='courseMetaData'>| Spring 2014 | Vandyke | Lindenwood</span></div> <div class='courseDescription'>Developed Many applications that would Manipulate data and files. Learned C++ syntax and structures.</div> </div> <hr><div class='course'> <div class='courseName'>Java - Beginner</div> <div class='courseNumber'>Computer Science CCPT 284 <span class='courseMetaData'>| Fall 2013 | Rex | SCC</span></div> <div class='courseDescription'>Learned Basics of Java. Object Creation, Manipulation, Standard Libraries, and more.</div> </div> </div> </div> </div>");
+            }, 600);
+        }
+        
+        
         
                 setTimeout(function(){$("#content").css("opacity", "1.0");}, 600);
                 $('#content').css("height", "auto");
