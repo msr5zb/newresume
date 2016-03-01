@@ -174,7 +174,7 @@ $(document).ready(function(){
     
     function smoothScroll() {
        $('html, body').animate({
-           scrollTop: $("#navigation").offset().top
+           scrollTop: $("#content").offset().top-50
         }, 1000);
     }
     
