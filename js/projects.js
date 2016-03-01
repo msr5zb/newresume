@@ -11,7 +11,6 @@
     $("#reelz").css("opacity", "0.7");
       
     $(".projectPreview").click(function(){
-        smoothScroll3();
         switch(this.id){
             case 'game': {
                 console.log('game');
@@ -78,6 +77,7 @@
                 break;
             }
         }
+        smoothScroll3();
         
     function smoothScroll3() {
        $('html, body').animate({

@@ -11,7 +11,7 @@
     $("#fznNew").css("opacity", "0.7");
       
     $(".workBall").click(function(){
-        smoothScroll2();
+        
         switch(this.id){
             case 'mizzouNew': {
                 console.log('mizzouNew');
@@ -77,7 +77,7 @@
                 break;
             }
         }
-        
+        smoothScroll2();
     function smoothScroll2() {
        $('html, body').animate({
            scrollTop: $("#workContent").offset().top-50

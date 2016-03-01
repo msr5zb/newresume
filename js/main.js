@@ -261,7 +261,7 @@ $(document).ready(function(){
         clearNavs();
         
         
-        smoothScroll();
+        
          $("#content").css("opacity", "0.0");
         
         
@@ -327,7 +327,7 @@ $(document).ready(function(){
         }
         
         
-        
+        smoothScroll();
                 setTimeout(function(){$("#content").css("opacity", "1.0");}, 600);
                 $('#content').css("height", "auto");
        

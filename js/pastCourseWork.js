@@ -17,7 +17,6 @@
     $("#math").css("opacity", "0.7");
       
     $(".projectPreview").click(function(){
-        smoothScroll4();
         switch(this.id){
             case 'coreCourses': {
                 console.log('coreCourses');
@@ -84,5 +83,6 @@
                 break;
             }
         }
+        smoothScroll4();
     });  
   });  
