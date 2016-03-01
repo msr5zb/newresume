@@ -11,7 +11,7 @@
     $("#reelz").css("opacity", "0.7");
       
     $(".projectPreview").click(function(){
-        smoothScroll();
+        smoothScroll3();
         switch(this.id){
             case 'game': {
                 console.log('game');
@@ -79,9 +79,9 @@
             }
         }
         
-    function smoothScroll() {
+    function smoothScroll3() {
        $('html, body').animate({
-           scrollTop: $("#navigation").offset().top
+           scrollTop: $("#projectContent").offset().top-50
         }, 400);
     }
         

@@ -1,8 +1,8 @@
   $(document).ready(function(){    
         
-       function smoothScroll() {
+       function smoothScroll4() {
        $('html, body').animate({
-           scrollTop: $("#navigation").offset().top
+           scrollTop: $("#projectContent").offset().top-50
         }, 1000);
     }
       
@@ -17,7 +17,7 @@
     $("#math").css("opacity", "0.7");
       
     $(".projectPreview").click(function(){
-        smoothScroll();
+        smoothScroll4();
         switch(this.id){
             case 'coreCourses': {
                 console.log('coreCourses');
