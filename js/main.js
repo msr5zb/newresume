@@ -1,29 +1,7 @@
 $(document).ready(function(){
-    
-      $( "#enterSite" ).click(function() {
-            
-               $('.repeatingBG').css('opacity','0');
-                setTimeout(function(){ $('.repeatingBG').remove(); }, 600);
-               
-                setTimeout(function(){ $('#contentContainer').css('visibility','visible'); }, 600);
-               setTimeout(function(){ $('#contentContainer').css('opacity','1'); }, 600);
-              
-                 
-        });
 
-    
-            function entersite() {
-                console.log("Entering Site . . .");
-              $('#splash').css('visibility','hidden');
-            }
             
-       
-            
-            
-            
-            
-            
-            
+            $('#contentContainer').css('opacity','1'); 
             
             //Returns an Unique Random Number
             var uniqueRandoms = [];
@@ -38,7 +16,6 @@ $(document).ready(function(){
                 var val = uniqueRandoms[index];
                 uniqueRandoms.splice(index, 1);
                 return val;
-
             }
             
             

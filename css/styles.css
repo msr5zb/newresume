@@ -41,7 +41,6 @@ body{
 
 #contentContainer{
     margin: auto;
-    visibility: hidden;
     opacity: 0;
     padding: 0px;
     background-color: rgba(22,22,22,0.4);
@@ -175,6 +174,12 @@ body{
     cursor: pointer;
 }
 
+#vcpuBackground{
+  background-image: url('../images/projects/vcpu1.jpg');  
+}
+#cmodsBackground{
+  background-image: url('../images/projects/cmods1.jpg');  
+}
 #gameBackground{
   background-image: url('../images/projects/game1.jpg');  
 }
@@ -315,7 +320,12 @@ body{
   }
 }
 
-
+#vcpu{
+   background-image: url("../images/projects/vcpuSmall.jpg");
+}
+#cmods{
+   background-image: url("../images/projects/cmodsSmall.jpg");
+}
 #game{
    background-image: url("../images/projects/gameSmall.jpg");
 }
