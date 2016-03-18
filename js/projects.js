@@ -12,8 +12,52 @@
       
     $(".projectPreview").click(function(){
         switch(this.id){
+            case 'vcpu': {
+                console.log('vcpu');
+                $("#vcpu").css("boxShadow", "0px 0px 13px white");
+                $("#vcpu").css("opacity", "0.93");
+                $("#cmods").css("boxShadow", "");
+                $("#cmods").css("opacity", "0.7");
+                $("#game").css("boxShadow", "");
+                $("#game").css("opacity", "0.7");
+                $("#dnfansite").css("boxShadow", "");
+                $("#dnfansite").css("opacity", "0.7");
+                $("#myzou").css("boxShadow", "");
+                $("#myzou").css("opacity", "0.7");
+                $("#reelz").css("boxShadow", "");
+                $("#reelz").css("opacity", "0.7");
+                $("#projectContent").css("opacity", "0.0");
+                setTimeout(function(){$("#projectContent").html("<h3>Virtual CPU (Solo Project)</h3> <div class='row'> <div class='col-md-5' id='projectContentAlign'> <h4>Overview: This Project was carried out as part of my Operating Systems course at the University of Missouri - Columbia. It is an application that simulates how a processes handles processes from a ready Queue using specified algorithms. The user can choose between using Round Robin Scheduling or FCFS scheduling. Depending on how many of each algorithm is called, threads will be created to handle processing the Queue. In essence, a file full of PCB data is read in and threads are created to processes a single dynamic array made up of PCB input based on the desired algorithm. </h4> <h5 style='margin-bottom:0px;'>Key Features:</h5> <ul style='margin-left:15px;'> <li>Utilizes Dynamic Linked Lists</li> <li>Uses System Calls for faster performace.</li> <li>Demonstrates how C's pthreads work.</li> <li>Can perform 'infinite' series of algorithms.</li> <li>Can Track How the cpu handles different algorithms and Scheduling techniques.</li> <li>Uses CMake to build/compile related libraries and source code.</li> </ul> <h5>How it Works: Enter the Name of the File containing proper formmated PCB data and then enter which kind of Algorithms you would like to use. Ex: ./analysis_start PCBsInput.txt fcfs rr rr rr fcfs</h5> </div> <div class='col-md-7 gameOverview' id='vcpuBackground'></div> </div>");}, 600);
+                
+                setTimeout(function(){$("#projectContent").css("opacity", "1.0");}, 600);
+                break;
+            }
+    case 'cmods': {
+                console.log('cmods');
+                $("#vcpu").css("boxShadow", "");
+                $("#vcpu").css("opacity", "0.7");
+                $("#game").css("boxShadow", "");
+                $("#game").css("opacity", "0.7");
+                $("#cmods").css("boxShadow", "0px 0px 13px white");
+                $("#cmods").css("opacity", "0.93");
+                $("#dnfansite").css("boxShadow", "");
+                $("#dnfansite").css("opacity", "0.7");
+                $("#myzou").css("boxShadow", "");
+                $("#myzou").css("opacity", "0.7");
+                $("#reelz").css("boxShadow", "");
+                $("#reelz").css("opacity", "0.7");
+                $("#projectContent").css("opacity", "0.0");
+                setTimeout(function(){$("#projectContent").html("<h3>Basic System C Modules (Solo Project)</h3> <div class='row'> <div class='col-md-5' id='projectContentAlign'> <h4>Overview: This Project was used to illustrate an overview of the C language as a whole. It contains modules covering Memory Allocating, Arrays, Bits (Bit Mapping), Debugging, Error Handling, Strings, Strucutures, and System Programming.</h4> <h5 style='margin-bottom:0px;'>Key Features:</h5> <ul style='margin-left:15px;'> <li>Ultilizes System calls for better understanding of the language.</li> <li>Uses CMake to build/compile related libraries and source code.</li> <li>Displays A Broad Range of Knowledge of the C Language.</li> <li>Provides examples of Well Oragnized, Documented Code.</li> <li>File and Bit Manipulation.</li> <li>Uses Headers for Function/Structure Referencing.</li> </ul></div> <div class='col-md-7 gameOverview' id='cmodsBackground'></div> </div> ");}, 600);
+                
+                setTimeout(function(){$("#projectContent").css("opacity", "1.0");}, 600);
+                break;
+            }              
             case 'game': {
                 console.log('game');
+                $("#vcpu").css("boxShadow", "");
+                $("#vcpu").css("opacity", "0.7");
+                $("#cmods").css("boxShadow", "");
+                $("#cmods").css("opacity", "0.7");
                 $("#game").css("boxShadow", "0px 0px 13px white");
                 $("#game").css("opacity", "0.93");
                 $("#dnfansite").css("boxShadow", "");
@@ -23,7 +67,7 @@
                 $("#reelz").css("boxShadow", "");
                 $("#reelz").css("opacity", "0.7");
                 $("#projectContent").css("opacity", "0.0");
-                setTimeout(function(){$("#projectContent").html(" <h3>Visualizer Game (Solo Project)</h3> <div class='row'> <div class='col-md-5' id='projectContentAlign'> <h4>Overview: This game was developed entirely using Java. It utilizes JavaFX to give the user a nice Interface. Is user friendly, and allows users to a variety of levels, bands, and variety of functions.</h4> <h5 style='margin-bottom:0px;'>Key Features:</h5> <ul style='margin-left:15px;'> <li>Ultilizes Java's Extensive libraries on visual Effects</li> <li>Made using JavaFX</li> <li>Personal Song Selection</li> <li>HighScores</li> <li>Multiple Levels</li> <li>Can Pause Mid-Session</li> <li>Demonstrates Threading via enemies!</li> <li>Enemies Randomly Spawn</li> <li>Multiple Bands Selection</li> <li>Live/Fluid Transitions between levels</li> </ul> <h5>How it Works: Simply open a music file by going to File>Open and select your song. Then, Choose a level to play on while the song is playing. Enjoy :)</h5> <h5>Download Here: <a onclick=\"window.open('Msr5zbGameVisualizer.jar');\">Game Download</a></h5> </div> <div class='col-md-7 gameOverview' id='gameBackground'></div> </div>");}, 600);
+                setTimeout(function(){$("#projectContent").html("<h3>Visualizer Game (Solo Project)</h3> <div class='row'> <div class='col-md-5' id='projectContentAlign'> <h4>Overview: This game was developed entirely using Java. It utilizes JavaFX to give the user a nice Interface. Is user friendly, and allows users to a variety of levels, bands, and variety of functions.</h4> <h5 style='margin-bottom:0px;'>Key Features:</h5> <ul style='margin-left:15px;'> <li>Ultilizes Java's Extensive libraries on visual Effects</li> <li>Made using JavaFX</li> <li>Personal Song Selection</li> <li>HighScores</li> <li>Multiple Levels</li> <li>Can Pause Mid-Session</li> <li>Demonstrates Threading via enemies!</li> <li>Enemies Randomly Spawn</li> <li>Multiple Bands Selection</li> <li>Live/Fluid Transitions between levels</li> </ul> <h5>How it Works: Simply open a music file by going to File>Open and select your song. Then, Choose a level to play on while the song is playing. Enjoy :)</h5> <h5>Download Here: <a onclick=\"window.open('Msr5zbGameVisualizer.jar');\">Game Download</a></h5> </div> <div class='col-md-7 gameOverview' id='gameBackground'></div> </div>");}, 600);
                 
                 setTimeout(function(){$("#projectContent").css("opacity", "1.0");}, 600);
                 break;
@@ -31,7 +75,10 @@
 
             case 'dnfansite': {
                 console.log('dnfansite');
-                
+                $("#vcpu").css("boxShadow", "");
+                $("#vcpu").css("opacity", "0.7");
+                $("#cmods").css("boxShadow", "");
+                $("#cmods").css("opacity", "0.7");
                 $("#dnfansite").css("boxShadow", "0px 0px 13px white");
                 $("#dnfansite").css("opacity", "0.93");
                 $("#game").css("boxShadow", "");
@@ -48,6 +95,10 @@
             }
             case 'myzou': {
                 console.log('myzou');
+                $("#vcpu").css("boxShadow", "");
+                $("#vcpu").css("opacity", "0.7");
+                $("#cmods").css("boxShadow", "");
+                $("#cmods").css("opacity", "0.7");
                 $("#myzou").css("boxShadow", "0px 0px 13px white");
                 $("#myzou").css("opacity", "0.93");
                 $("#dnfansite").css("boxShadow", "");
@@ -63,6 +114,10 @@
             }
             case 'reelz': {
                 console.log('reelz');
+                $("#vcpu").css("boxShadow", "");
+                $("#vcpu").css("opacity", "0.7");
+                $("#cmods").css("boxShadow", "");
+                $("#cmods").css("opacity", "0.7");
                 $("#reelz").css("boxShadow", "0px 0px 13px white");
                 $("#reelz").css("opacity", "0.93");
                 $("#dnfansite").css("boxShadow", "");
