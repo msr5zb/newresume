@@ -46,6 +46,14 @@ $(document).ready(function(){
     
  function preloader() {
         if (document.images) {
+            
+            
+            var mizzou = new Image();
+            var lindenwood = new Image();
+            var img1 = new Image();
+            var img1 = new Image();
+            var img1 = new Image();
+            
             var img1 = new Image();
             var img2 = new Image();
             var img3 = new Image();
@@ -73,11 +81,8 @@ $(document).ready(function(){
             var sliderb8 = new Image();
             var sliderb9 = new Image();
             var sliderb10 = new Image();
-            var sliderb11 = new Image();
-           
-            
+            var sliderb11 = new Image();            
          
-
             img1.src = "images/stchas.jpg";
             img2.src = "images/mizzou.jpg";
             img3.src = "images/fzn.jpg";
@@ -96,29 +101,6 @@ $(document).ready(function(){
             img16.src = "images/b05.png";
             img17.src = "images/sliderPics/microcontroller.jpg";
             
-            
-            
-            
-            var gameimg = new Image();
-            var dnimg = new Image();
-            var myzouimg = new Image();
-            var reelzimg = new Image();
-
-            gameimg.src = "images/projects/game1.jpg";
-            dnimg.src = "images/projects/dn1.jpg";
-            myzouimg.src = "images/projects/myzou1.jpg";
-            reelzimg.src = "images/projects/reelz1.jpg";            
-            
-            var hyvee = new Image();
-            var shopnsave = new Image();
-            var cellairis = new Image();
-            var ozellas = new Image();
-   
-            hyvee.src = "images/hyveeBG2.jpg";
-            shopnsave.src = "images/shopnsaveBG2.jpg";
-            cellairis.src = "images/cellairisBG2.jpg";
-            ozellas.src = "images/ozellasBG2.jpg"; 
-            
             sliderb1.src = "images/sliderPics/laravel.jpg";
             sliderb2.src = "images/sliderPics/virtualBox.jpg";
             sliderb3.src = "images/sliderPics/vmware.jpg";
@@ -130,6 +112,33 @@ $(document).ready(function(){
             sliderb9.src = "images/sliderPics/sourcetree.jpg";
             sliderb10.src = "images/sliderPics/openshift.jpg";
             sliderb11.src = "images/sliderPics/azure.jpg";
+            
+            var gameimg = new Image();
+            var dnimg = new Image();
+            var myzouimg = new Image();
+            var reelzimg = new Image();
+            var vcpuimg = new Image();
+            var cmodsimg = new Image();
+            
+            var gameimgSmall = new Image();
+            var dnimgSmall = new Image();
+            var myzouimgSmall = new Image();
+            var reelzimgSmall = new Image();
+            var vcpuimgSmall = new Image();
+            var cmodsimgSmall = new Image();
+            
+            gameimg.src = "images/projects/game1.jpg";
+            dnimg.src = "images/projects/dn1.jpg";
+            myzouimg.src = "images/projects/myzou1.jpg";
+            reelzimg.src = "images/projects/reelz1.jpg";            
+            vcpuimg.src = "images/projects/vcpu1.jpg";            
+            cmodsimg.src = "images/projects/cmods1.jpg";  
+            gameimgSmall.src = "images/projects/gameSmall.jpg";
+            dnimgSmall.src = "images/projects/dnfansiteSmall.jpg";
+            myzouimgSmall.src = "images/projects/myzouSmall.jpg";
+            reelzimgSmall.src = "images/projects/4reelzSmall.jpg";  
+            vcpuimgSmall.src = "images/projects/vcpuSmall.jpg";      
+            cmodsimgSmall.src = "images/projects/cmodsSmall.jpg"; 
         }
     }
     
