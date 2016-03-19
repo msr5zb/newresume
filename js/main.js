@@ -48,15 +48,27 @@ $(document).ready(function(){
         if (document.images) {
             
             
+            var mizzouSmall = new Image();
+            var lindenwoodSmall = new Image();
+            var sccSmall = new Image();
+            var fznSmall = new Image();
+            
             var mizzou = new Image();
             var lindenwood = new Image();
-            var img1 = new Image();
-            var img1 = new Image();
-            var img1 = new Image();
+            var scc = new Image();
+            var fzn = new Image();
             
-            var img1 = new Image();
-            var img2 = new Image();
-            var img3 = new Image();
+            mizzouSmall.src = "images/mizzouNew.jpg";
+            lindenwoodSmall.src = "images/lindenwoodNew.jpg";
+            sccSmall.src = "images/sccNew.jpg";
+            fznSmall.src = "images/fznNew.jpg";
+            
+            mizzou.src = "images/mizzouNew2.jpg";
+            lindenwood.src = "images/lindenwoodNew2.jpg";
+            scc.src = "images/sccNew2.jpg";
+            fzn.src = "images/fznNew2.jpg";
+            
+            
             var img4 = new Image();
             var img5 = new Image();
             var img6 = new Image();
@@ -71,6 +83,7 @@ $(document).ready(function(){
             var img15 = new Image();
             var img16 = new Image();
             var img17 = new Image();
+
             var sliderb1 = new Image();
             var sliderb2 = new Image();
             var sliderb3 = new Image();
@@ -83,9 +96,7 @@ $(document).ready(function(){
             var sliderb10 = new Image();
             var sliderb11 = new Image();            
          
-            img1.src = "images/stchas.jpg";
-            img2.src = "images/mizzou.jpg";
-            img3.src = "images/fzn.jpg";
+
             img4.src = "images/sliderPics/postgres.jpg";
             img5.src = "images/sliderPics/jquery.jpg";
             img6.src = "images/sliderPics/javascript.jpg";
@@ -133,6 +144,7 @@ $(document).ready(function(){
             reelzimg.src = "images/projects/reelz1.jpg";            
             vcpuimg.src = "images/projects/vcpu1.jpg";            
             cmodsimg.src = "images/projects/cmods1.jpg";  
+            
             gameimgSmall.src = "images/projects/gameSmall.jpg";
             dnimgSmall.src = "images/projects/dnfansiteSmall.jpg";
             myzouimgSmall.src = "images/projects/myzouSmall.jpg";
